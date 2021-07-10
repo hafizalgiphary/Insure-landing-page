@@ -1,0 +1,508 @@
+/*Color*/
+$footer-color: #fafafa;
+$background-color: #ffffff;
+$DarkGrayishViolet: hsl(273, 4%, 51%);
+$DarkViolet: hsl(256, 26%, 20%);
+$GrayishBlue: hsl(216, 30%, 68%);
+$VeryDarkViolet: hsl(270, 9%, 17%);
+
+/*font*/
+$heading-font-family: "DM Serif Display", serif;
+$body-font-family: "Karla", sans-serif;
+$hero-title: 75px;
+$nav-font-rsp: 15px;
+$hero-title-rsp: 60px;
+$title-find-out-font-size: 35px;
+$nav-font-rsp-2: 14px;
+$card-title-font-size: 23px;
+$font-size-rsp-50: 50px;
+
+$full: 100%;
+
+/*Spacing*/
+$navbar-letter-spacing: 1.5px;
+$padding-jumbotron: 4rem;
+$push-img-intro: 12rem;
+
+/*position*/
+$title-profit-font-size-rsp: 40px;
+$bg-size-rsp: 20%;
+$wraper-button-margin-top: 2.5rem;
+$center: center;
+$pattern-right-desktop-rsp-bottom: 28rem;
+$pattern-right-desktop-rsp-left: 46.7rem;
+$card-title-font-size-rsp: 30px;
+$pattern-left-desktop-top-rsp-top: 33rem;
+$pattern-left-desktop-top-rsp-width: 11%;
+$zero-padding-margin: 0rem;
+$pattern-right-desktop-bottom-rsp: 22.6rem;
+$pattern-right-desktop-left-rsp: 57.6rem;
+$pattern-right-desktop-width-rsp: 27%;
+$img-intro-right: 5rem;
+$top-right: top right;
+$absolute: absolute;
+$z-index-1: 1;
+$z-index-2: 2;
+$right-image-intro: 19rem;
+$width-image-intro: 35%;
+$pattern-right-bottom: 16.4rem;
+$pattern-right-left: 86.8rem;
+$pattern-right-width: 27%;
+$pattern-left-dektop-top: 31rem;
+$pattern-left-dektop-width: 15%;
+$img-card-top-width: 6rem;
+$title-find-out-lef: 3rem;
+$no-repeat: no-repeat;
+$wrapper-button: 7.5rem;
+$bold: bold;
+$bg-size-footer: 40%;
+$bg-position: -2rem;
+
+/*Etc*/
+$masking: rect(101px, 1000px, 1000px, 0px);
+$solid: solid;
+$none: none;
+
+/*breakpoints*/
+$xl-2: 1280px;
+$xl-1: 1200px;
+
+$lg-2: 1024px;
+$lg-1: 992px;
+
+$md-2: 768px;
+$md-1: 720px;
+
+$sm: 576px;
+$xs: 375px;
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: $background-color;
+}
+
+.navbar {
+  font-family: $body-font-family;
+  letter-spacing: $navbar-letter-spacing;
+}
+
+.btn-navbar {
+  font-family: $body-font-family;
+  letter-spacing: $navbar-letter-spacing;
+}
+
+.jumbotron {
+  background-color: $DarkViolet;
+  padding-bottom: $padding-jumbotron;
+}
+
+.image-intro {
+  position: $absolute;
+  top: $push-img-intro;
+  z-index: $z-index-1;
+  right: $right-image-intro;
+  width: $width-image-intro;
+}
+
+.pattern-right-desktop {
+  position: $absolute;
+  clip: $masking;
+  z-index: $z-index-2;
+  bottom: $pattern-right-bottom;
+  left: $pattern-right-left;
+  width: $pattern-right-width;
+}
+
+.hero-title {
+  font-family: $heading-font-family;
+  font-size: $hero-title;
+  letter-spacing: $navbar-letter-spacing;
+}
+
+.hero-desc {
+  font-family: $body-font-family;
+}
+
+.pattern-left-desktop {
+  top: $pattern-left-dektop-top;
+  width: $pattern-left-dektop-width;
+}
+
+.wraper-line {
+  margin-top: $pattern-left-dektop-top;
+}
+
+.line {
+  padding-left: $pattern-left-dektop-width;
+  border-color: $DarkGrayishViolet;
+  border-style: $solid;
+  border-left: $none;
+  border-right: $none;
+  border-bottom: $none;
+}
+
+.title-profit {
+  font-family: $heading-font-family;
+  font-size: $hero-title;
+  letter-spacing: $navbar-letter-spacing;
+  color: $VeryDarkViolet;
+}
+
+.card-title {
+  font-family: $heading-font-family;
+}
+
+.card-img-top {
+  width: $img-card-top-width;
+}
+
+.card-text {
+  font-family: $body-font-family;
+  color: $DarkGrayishViolet;
+}
+
+.title-find-out {
+  margin-left: $title-find-out-lef;
+  margin-top: $padding-jumbotron;
+  font-family: $heading-font-family;
+  color: $background-color;
+}
+
+.jumbotron-find-out {
+  background-color: $DarkViolet;
+  padding-bottom: $padding-jumbotron;
+  background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+  background-repeat: $no-repeat;
+  background-position: $top-right;
+  background-size: $pattern-left-dektop-top;
+}
+
+.wraper-button {
+  margin-top: $wrapper-button;
+}
+
+.footer {
+  background-color: $footer-color;
+  background-image: url("../images/bg-pattern-footer-desktop.svg");
+  background-repeat: $no-repeat;
+  background-size: $bg-size-footer;
+  background-position-y: $bg-position;
+}
+
+.heading-footer {
+  font-family: $body-font-family;
+  letter-spacing: $navbar-letter-spacing;
+  color: $DarkGrayishViolet;
+  font-weight: $bold;
+}
+
+.text-footer {
+  font-family: $body-font-family;
+  letter-spacing: $navbar-letter-spacing;
+  color: $DarkViolet;
+  font-weight: $bold;
+}
+
+/*xl breakpoints*/
+@media (min-width: $xl-1) and (max-width: $xl-2) {
+  .navbar {
+    font-size: $nav-font-rsp;
+  }
+
+  .btn-navbar {
+    font-size: $nav-font-rsp;
+  }
+
+  .image-intro {
+    top: $push-img-intro;
+    right: $img-intro-right;
+    width: $width-image-intro;
+  }
+
+  .pattern-right-desktop {
+    bottom: $pattern-right-desktop-bottom-rsp;
+    left: $pattern-right-desktop-left-rsp;
+    width: $pattern-right-desktop-width-rsp;
+  }
+
+  .jumbotron {
+    padding-bottom: $zero-padding-margin;
+  }
+
+  .hero-title {
+    font-size: $hero-title-rsp;
+  }
+
+  .hero-desc {
+    font-size: $nav-font-rsp;
+  }
+
+  .pattern-left-desktop {
+    top: $pattern-left-desktop-top-rsp-top;
+    width: $pattern-left-desktop-top-rsp-width;
+  }
+
+  .wraper-line {
+    margin-top: $push-img-intro;
+  }
+
+  .card-title {
+    font-size: $card-title-font-size-rsp;
+  }
+
+  .card-img-top {
+    width: $img-intro-right;
+  }
+
+  .card-text {
+    font-size: $nav-font-rsp;
+  }
+
+  .title-profit {
+    font-size: $hero-title-rsp;
+  }
+
+  .title-find-out {
+    font-size: $hero-title-rsp;
+  }
+
+  .heading-footer {
+    font-size: $nav-font-rsp;
+  }
+
+  .text-footer {
+    font-size: $nav-font-rsp;
+  }
+}
+
+/*xl breakpoints*/
+
+/*lg breakpoints*/
+@media (min-width: $lg-1) and (max-width: $lg-2) {
+  .navbar {
+    font-size: $nav-font-rsp-2;
+  }
+
+  .btn-navbar {
+    font-size: $nav-font-rsp-2;
+  }
+
+  .pattern-right-desktop {
+    bottom: $pattern-right-desktop-rsp-bottom;
+    left: $pattern-right-desktop-rsp-left;
+    width: $pattern-right-desktop-width-rsp;
+  }
+
+  .jumbotron {
+    padding-bottom: 7rem;
+  }
+
+  .hero-title {
+    font-size: $font-size-rsp-50;
+  }
+
+  .hero-desc {
+    font-size: 13.5px;
+  }
+
+  .pattern-left-desktop {
+    top: $pattern-left-desktop-top-rsp-top;
+    width: $pattern-left-desktop-top-rsp-width;
+  }
+
+  .image-intro {
+    top: 9rem;
+    right: $title-find-out-lef;
+    width: 45%;
+  }
+
+  .wraper-line {
+    margin-top: 11rem;
+  }
+
+  .card-title {
+    font-size: $card-title-font-size-rsp;
+  }
+
+  .card-img-top {
+    width: $img-intro-right;
+  }
+
+  .card-text {
+    font-size: $nav-font-rsp-2;
+  }
+
+  .wraper-button {
+    margin-top: $img-intro-right;
+  }
+
+  .title-profit {
+    font-size: $hero-title-rsp;
+  }
+
+  .title-find-out {
+    font-size: $font-size-rsp-50;
+  }
+
+  .heading-footer {
+    font-size: $nav-font-rsp-2;
+  }
+
+  .text-footer {
+    font-size: $nav-font-rsp-2;
+  }
+}
+/*lg breakpoints*/
+
+/*md breakpoints*/
+@media (min-width: $md-1) and (max-width: $md-2) {
+  .navbar {
+    text-align: $center;
+    font-size: $nav-font-rsp-2;
+  }
+
+  .btn-navbar {
+    font-size: $nav-font-rsp-2;
+  }
+
+  .jumbotron {
+    background-image: url("../images/bg-pattern-intro-left-mobile.svg"),
+      url("../images/bg-pattern-intro-right-mobile.svg");
+    background-repeat: $no-repeat, $no-repeat;
+    background-position: top left, right bottom;
+    margin-top: $zero-padding-margin;
+    background-size: $width-image-intro, $bg-size-rsp;
+  }
+
+  .hero-title {
+    padding-top: $img-intro-right;
+    font-size: $hero-title-rsp;
+  }
+
+  .img-intro-sm {
+    width: $full;
+  }
+
+  .wraper-line {
+    margin-top: 10rem;
+  }
+
+  .title-profit {
+    font-size: $hero-title-rsp;
+  }
+
+  .card-title {
+    font-size: $card-title-font-size;
+  }
+
+  .title-find-out {
+    font-size: $hero-title-rsp;
+    margin-left: $zero-padding-margin;
+    margin-top: $zero-padding-margin;
+  }
+
+  .wraper-button {
+    margin-top: $wraper-button-margin-top;
+  }
+  .jumbotron-find-out {
+    background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+    background-size: $bg-size-footer;
+  }
+  .menu {
+    right: 1.5rem;
+    top: 1.21rem;
+    z-index: 2;
+    transition: opacity ease-in-out 330ms;
+  }
+
+  .menuActive {
+    opacity: 0%;
+  }
+
+  .close {
+    right: 1.5rem;
+    top: 1.21rem;
+    z-index: 1;
+  }
+}
+/*md breakpoints*/
+
+/*xs and sm breakpoints*/
+@media (min-width: $xs) and (max-width: $sm) {
+  .navbar {
+    text-align: $center;
+    font-size: $nav-font-rsp;
+  }
+  .hero-title {
+    padding-top: 2rem;
+    font-size: $title-profit-font-size-rsp;
+  }
+
+  .img-intro-sm {
+    width: $full;
+  }
+
+  .remove {
+    white-space: pre;
+  }
+
+  .jumbotron {
+    background-image: url("../images/bg-pattern-intro-left-mobile.svg"),
+      url("../images/bg-pattern-intro-right-mobile.svg");
+    background-repeat: $no-repeat, $no-repeat;
+    background-position: top left, right bottom;
+    margin-top: $zero-padding-margin;
+    background-size: $width-image-intro, $bg-size-rsp;
+  }
+
+  .wraper-line {
+    margin-top: $img-intro-right;
+  }
+
+  .title-profit {
+    font-size: $title-profit-font-size-rsp;
+  }
+
+  .card-title {
+    font-size: $card-title-font-size;
+  }
+
+  .title-find-out {
+    font-size: $title-find-out-font-size;
+    margin-left: $zero-padding-margin;
+    margin-top: $zero-padding-margin;
+  }
+
+  .jumbotron-find-out {
+    background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+    background-size: $bg-size-footer;
+  }
+
+  .wraper-button {
+    margin-top: $wraper-button-margin-top;
+  }
+
+  .footer {
+    text-align: $center;
+  }
+
+  .menu {
+    right: 1.5rem;
+    top: 1.21rem;
+    z-index: 2;
+    transition: opacity ease-in-out 330ms;
+  }
+
+  .menuActive {
+    opacity: 0%;
+  }
+
+  .close {
+    right: 1.5rem;
+    top: 1.21rem;
+    z-index: 1;
+  }
+}
+/*xs and sm breakpoints*/
